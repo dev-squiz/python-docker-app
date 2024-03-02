@@ -53,7 +53,7 @@ docker build -t my-test-app .
 To run the Docker container, use the following command:
 
 ```bash
-docker run -d -p 5000:5000 my-test-app
+docker run -d -p 5000:8080 my-test-app
 ```
 
 ### Pushing the Docker Image to Docker Hub
