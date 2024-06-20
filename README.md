@@ -60,13 +60,19 @@ docker run -d -p 5000:8080 my-test-app
 
 To push the Docker image to Docker Hub, follow these steps:
 
-1. **Tag the Image**:
+1. **Sign in to Docker Hub using the command**:
+
+```bash
+docker login -u YOUR-USER-NAME
+```
+
+2. **Tag the Image**:
 
 ```bash
 docker tag my-test-app your-dockerhub-username/my-test-app:latest
 ```
 
-2. **Push the Image**:
+3. **Push the Image**:
 
 ```bash
 docker push your-dockerhub-username/my-test-app:latest
